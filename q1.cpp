@@ -32,7 +32,7 @@ void getinput(int n1, int n2)
 void getinput(float f1, float f2)
 {
 	cout << "Enter f1 and f2: ";
-	cin >> f1 >> f2;
+	cin >> f1 >> f2; 
 	swapTwoValues(f1, f2);
 }
 
