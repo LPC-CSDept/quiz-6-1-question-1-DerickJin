@@ -5,37 +5,42 @@ using namespace std;
 //********************
 // Declare Function Prototypes
 int getinput(int n1, int n2);
-int swapTwoValues(float n1, float n2);
+int getinput(float n1, float n2);
 //********************
+
+#include <iostream>
+using namespace std;
+
+void swapTwoValues(int n1,int n2)
+{
+	int temp;
+	cout << "Enter Int n1 and n2:";
+	cin>> n1 >> n2;
+	cout<<"Before swap int n1 = "<<n1<<" int n2 = "<<n2<<endl;
+	temp = n1;
+	n1= n2;
+	n2 = temp;
+	cout<<"After swap int n1 = "<<n1<<" int n2 = "<<n2<<endl;
+}
+
+void swapTwoValues(float f1, float f2)
+{
+	int temp;
+	cout << "Enter float f1 and f2:";
+	cin>> f1 >> f2;
+	cout<<"Before swap float f1 = "<<f1<<" float f2 = "<< f2 << endl;
+	temp = f1;
+	f1= f2;
+	f2 = temp;
+	cout<<"After swap float f1 = "<<f1<<" float f2 = "<< f2 << endl;
+}
 
 int main()
 {
-	int num1, num2;
-	float fnum1, fnum2;
-	num1 = getinput(num1, num2);
-	cout << " Before Swap" << setw(5) << num1 << setw(5) << num2 << setw(5) << endl;
-	swapTwoValues(num1, num2);
-	cout << " After Swap" << setw(5) << num1 << setw(5) << num2 << setw(5) << endl;
-
-	// -- Call overloaded function with float parameters
-	getinput(fnum1, fnum2);
-	cout << setw(5) << fnum1 << setw(5) << fnum2 << setw(5) << endl;
-	swapTwoValues(fnum1, fnum2);
-	cout << setw(5) << fnum1 << setw(5) << fnum2 << setw(5) << endl;
-}
-
-// ******************************
-// Implement all your functions here
-int getinput(int n1, int n2)
-{
-	using namespace std;
-	cout << "Enter numbers: ";
-	cin >> n1 >> n2;
+	int n1, n2;
+	float f1, f2;
+	swapTwoValues(n1,n2);
+	swapTwoValues(f1,f2);
 
 	return 0;
 }
-int swapTwoValues(float n1, float n2)
-{
-	return 0;
-}
-// ******************************
