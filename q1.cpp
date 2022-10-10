@@ -10,9 +10,6 @@ void getinput(int n1, int n2);
 void getinput(float n1, float n2);
 //********************
 
-#include <iostream>
-using namespace std;
-
 int main()
 {
 	int n1, n2;
