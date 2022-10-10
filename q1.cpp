@@ -4,12 +4,22 @@ using namespace std;
 
 //********************
 // Declare Function Prototypes
-int getinput(int n1, int n2);
-int getinput(float n1, float n2);
+void swapTwoValues(int n1, int n2);
+void swapTwoValues(float n1, float n2);
 //********************
 
 #include <iostream>
 using namespace std;
+
+int main()
+{
+	int n1, n2;
+	float f1, f2;
+	swapTwoValues(n1,n2);
+	swapTwoValues(f1,f2);
+
+	return 0;
+}
 
 void swapTwoValues(int n1,int n2)
 {
@@ -35,12 +45,3 @@ void swapTwoValues(float f1, float f2)
 	cout<<"After swap float f1 = "<<f1<<" float f2 = "<< f2 << endl;
 }
 
-int main()
-{
-	int n1, n2;
-	float f1, f2;
-	swapTwoValues(n1,n2);
-	swapTwoValues(f1,f2);
-
-	return 0;
-}
