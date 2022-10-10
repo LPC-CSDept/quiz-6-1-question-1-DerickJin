@@ -23,25 +23,25 @@ int main()
 
 void swapTwoValues(int n1,int n2)
 {
-	int temp;
+	int one;
 	cout << "Enter Int n1 and n2:";
 	cin>> n1 >> n2;
-	cout<<"Before swap int n1 = "<<n1<<" int n2 = "<<n2<<endl;
-	temp = n1;
+	cout<< "Before swap int n1 = " << n1 << " int n2 = " << n2 <<endl;
+	one = n1;
 	n1= n2;
-	n2 = temp;
-	cout<<"After swap int n1 = "<<n1<<" int n2 = "<<n2<<endl;
+	n2 = one;
+	cout<< "After swap int n1 = " << n1 << " int n2 = " << n2 <<endl;
 }
 
 void swapTwoValues(float f1, float f2)
 {
-	int temp;
+	int one;
 	cout << "Enter float f1 and f2:";
 	cin>> f1 >> f2;
-	cout<<"Before swap float f1 = "<<f1<<" float f2 = "<< f2 << endl;
-	temp = f1;
+	cout<<"Before swap float f1 = "<< f1 << " float f2 = " << f2 << endl;
+	one = f1;
 	f1= f2;
-	f2 = temp;
+	f2 = one;
 	cout<<"After swap float f1 = "<<f1<<" float f2 = "<< f2 << endl;
 }
 
